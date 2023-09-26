@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 0</title>
+
+    <script>
+        //Tenemos 2 formas de comunicarnos alert (aceptar), confirm (aceptar cancelar), prompt (introducir valor)
+        //console.log te pone alertas en la consola del navegador.
+        //Todas las funciones tienen que tener llamada.
+        function inicio(nombre) { // (nombre) puede ser de cualquier tipo.
+            respuesta = confirm("¿El nombre de tu centro es: " + nombre + "?");
+            alert(respuesta);
+            if (respuesta == true) {
+                alert("Enhorabuena");
+                console.log("Enhorabuena consola"); //se mostrará en inspeccionar, consola.
+            } else {
+                alert("Lo sentimos");
+                console.log("Los sentimos consola");
+            }
+        }
+
+        inicio(2); 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
